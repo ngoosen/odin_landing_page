@@ -13,8 +13,11 @@ html {
   --primary_blue: #1F2937;
   --secondary_blue: #3882F6;
   --almost_white: #F9FAF8;
+  --almost_black: #1F2937;
+  --grey: #E5E7EB;
 
   --size_padding: 200px;
+  --section_height: 500px;
 }
 
 header, footer, .landing {
@@ -58,7 +61,7 @@ a:hover {
   align-items: center;
   gap: 100px;
 
-  height: 500px;
+  height: var(--section_height);
 
   padding: 0 var(--size_padding);
 }
@@ -109,4 +112,55 @@ a:hover {
 
   text-align: center;
   background-color: #ffffff57;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+
+  height: var(--section_height);
+
+  padding: 50px var(--size_padding);
+}
+
+.infos h2 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--primary_blue);
+  font-weight: 900;
+}
+
+.articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 50px;
+}
+
+.articles article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+}
+
+.articles p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--almost_black);
+
+  margin-top: 20px;
+}
+
+.articles .image_placeholder {
+  width: 200px;
+  height: 200px;
+
+  border: 5px var(--secondary_blue) solid;
+  border-radius: 10px;
 }
