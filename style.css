@@ -66,7 +66,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 100px;
 
   height: var(--section_height);
 
